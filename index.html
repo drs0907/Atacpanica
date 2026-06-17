@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucia Search</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-$END$
+
+<div class="search-container">
+  <div class="logo">
+    <span>L</span><span>u</span><span>c</span><span>i</span><span>a</span><span class="search-text">Search</span>
+  </div>
+
+  <form action="https://duckduckgo.com/" method="GET">
+    <div class="search-box">
+      <input type="text" name="q" class="search-input" autofocus required autocomplete="off">
+    </div>
+
+    <div class="buttons-container">
+      <button type="submit" class="btn">Caută cu Lucia</button>
+      <button type="button" class="btn" onclick="alert('Ești norocoasă azi!')">Mă simt norocoasă</button>
+    </div>
+  </form>
+</div>
+
 </body>
 </html>

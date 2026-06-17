@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.search-container {
+    text-align: center;
+    width: 100%;
+    max-width: 584px;
+    padding: 20px;
+}
+
+/* Stilul textului "Lucia" */
+.logo {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+/* Culorile pentru fiecare literă */
+.logo span:nth-child(1) { color: #4285F4; } /* L */
+.logo span:nth-child(2) { color: #EA4335; } /* u */
+.logo span:nth-child(3) { color: #FBBC05; } /* c */
+.logo span:nth-child(4) { color: #4285F4; } /* i */
+.logo span:nth-child(5) { color: #34A853; } /* a */
+
+.logo span.search-text {
+    font-size: 2rem;
+    color: #70757a;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-left: 10px;
+}
+
+/* Bara de căutare */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dee1e5;
+    border-radius: 24px;
+    padding: 10px 20px;
+    transition: box-shadow 0.2s;
+    background: #fff;
+}
+
+.search-box:hover, .search-box:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Butoanele de sub bară */
+.buttons-container {
+    margin-top: 25px;
+}
+
+.btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: border 0.1s, color 0.1s;
+}
+
+.btn:hover {
+    border: 1px solid #dadce0;
+    color: #202124;
+    background-color: #f8f9fa;
+}
